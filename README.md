@@ -29,8 +29,7 @@ radio range, without authentication.
 
 | Driver | Bus | Location | Stack Overflow | Inf Loop | Heap leak | 0-click | Emulation verified | HW verified | Notes |
 |--------|-----|----------|:--------:|:----:|:---------:|:-------:|:---------:|:-----------:|-------|
-| **rtl8723bs** | SDIO | in-tree `drivers/staging/rtl8723bs` | ✅ | ✅ | ✅ | ✅ | ✅ mwemu | — | Fix posted ([v2](https://lore.kernel.org/all/20260901091226.4446
-66-1-sha0@badchecksum.net/)), not merged |
+| **rtl8723bs** | SDIO | in-tree `drivers/staging/rtl8723bs` | ✅ | ✅ | ✅ | ✅ | ✅ mwemu | — | Fix posted |
 | **rtl8812au** | USB | [aircrack-ng/rtl8812au](https://github.com/aircrack-ng/rtl8812au) | ✅ | ✅ | ✅ | ❌ | source review | ✅ kernel panic | Requires specifi
 c scan params (n_ssids=1, n_channels=1) |
 | **rtl8188eus** | USB | [aircrack-ng/rtl8188eus](https://github.com/aircrack-ng/rtl8188eus) | ✅ | ✅ | ✅ | ? | source review | — | Not tested |
