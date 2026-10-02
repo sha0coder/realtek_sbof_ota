@@ -30,14 +30,11 @@ radio range, without authentication.
 | Driver | Bus | Location | Stack Overflow | Inf Loop | Heap leak | 0-click | Emulation verified | HW verified | Notes |
 |--------|-----|----------|:--------:|:----:|:---------:|:-------:|:---------:|:-----------:|-------|
 | **rtl8723bs** | SDIO | in-tree `drivers/staging/rtl8723bs` | ✅ | ✅ | ✅ | ✅ | ✅ mwemu | — | Fix posted |
-| **rtl8812au** | USB | [aircrack-ng/rtl8812au](https://github.com/aircrack-ng/rtl8812au) | ✅ | ✅ | ✅ | ❌ | source review | ✅ kernel panic | Requires specifi
-c scan params (n_ssids=1, n_channels=1) |
+| **rtl8812au** | USB | [aircrack-ng/rtl8812au](https://github.com/aircrack-ng/rtl8812au) | ✅ | ✅ | ✅ | ❌ | source review | ✅ kernel panic | Requires specifi c scan params (n_ssids=1, n_channels=1) |
 | **rtl8188eus** | USB | [aircrack-ng/rtl8188eus](https://github.com/aircrack-ng/rtl8188eus) | ✅ | ✅ | ✅ | ? | source review | — | Not tested |
 | **rtl8723du** | USB | [lwfinger/rtl8723du](https://github.com/lwfinger/rtl8723du) | ✅ | ✅ | ✅ | ? | source review | — | Not tested |
-| **rtl8812au** (astsam) | USB | [astsam/rtl8812au](https://github.com/astsam/rtl8812au) | ✅ | ✅ | ✅ | ✅ | source review | — | Original fork, unconditional ca
-ll on scan path |
-| **8821cu** | USB | [morrownr/8821cu-20210916](https://github.com/morrownr/8821cu-20210916-5.12.x) | ❌ Partial | ✅ | ✅ | ? | source review | — | Copy clamped 
-(overflow mitigated), but `u16` wrap + heap leak remain |
+| **rtl8812au** (astsam) | USB | [astsam/rtl8812au](https://github.com/astsam/rtl8812au) | ✅ | ✅ | ✅ | ✅ | source review | — | Original fork, unconditional ca ll on scan path |
+| **8821cu** | USB | [morrownr/8821cu-20210916](https://github.com/morrownr/8821cu-20210916-5.12.x) | ❌ Partial | ✅ | ✅ | ? | source review | — | Copy clamped (overflow mitigated), but `u16` wrap + heap leak remain |
 
 ### NOT affected
 
